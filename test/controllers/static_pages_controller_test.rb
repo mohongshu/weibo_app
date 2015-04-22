@@ -20,4 +20,10 @@ class StaticPagesControllerTest < ActionController::TestCase
   	assert_response :success
   	assert_select "title", "关于 | #{base_title}" 
   end
+
+  test "should get contact" do
+    get :contact
+    assert_response :success
+    assert_select "title", "联系 | #{base_title}"
+  end
 end
