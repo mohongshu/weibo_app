@@ -11,6 +11,7 @@ class UsersController < ApplicationController
   	@user = User.new(user_params)
   	if @user.save
   		#处理成功
+      log_in @user
   		flash[:success] = "欢迎加入爱吐槽！"
   		redirect_to @user
   	else
