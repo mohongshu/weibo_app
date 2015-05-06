@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
   		#用户登入，重定向到用户资料页
   		log_in user
   		params[:session][:remember_me] == '1' ? remember(user) : forget(user)
-  		redirect_to user
+  		redirect_back_or user
   	else
   		#显示登陆错误消息
   		flash.now[:danger] = "邮箱或者密码错误"
