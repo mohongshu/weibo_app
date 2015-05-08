@@ -1,0 +1,7 @@
+<h1>爱吐槽</h1>
+<p>Hi <%= @user.name %></p>
+<p>
+  欢迎来到爱吐槽，点击以下链接激活账户
+</p>
+<%= link_to "激活", edit_account_activation_url(@user.activation_token, 
+	                                             email: @user.email) %>
