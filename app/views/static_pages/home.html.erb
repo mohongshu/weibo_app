@@ -5,26 +5,26 @@
 	<section class="user_info">
 		<%= render 'shared/user_info' %>
 	</section>
-<section class="stats">
-<%= render 'shared/stats' %>
-</section>
+	<section class="stats">
+		<%= render 'shared/stats' %>
+	</section>
 	<section class="micropost_form">
 		<%= render 'shared/micropost_form' %>
 	</section>
 	</aside>
-<div class="col-md-8">
-<h3>Micropost Feed</h3>
-<%= render 'shared/feed' %>
-</div>
-</div>
+		<div class="col-md-8">
+			<h3>吐槽贴贴贴</h3>
+			<%= render 'shared/feed' %>
+		</div>
+	</div>
 <% else %>
-<div class="center jumbotron">
-	<h1>欢迎大家访问这个网站</h1>
-	<h2>
-		这是给大家吐槽的主页
-		<a href="http://www.railstutorial.org/">i吐槽</a>
-		欢迎大家。
-	</h2>
+	<div class="center jumbotron">
+		<h1>欢迎大家访问这个网站</h1>
+		<h2>
+			<p>尽情吐槽！</p>
+			<p>“你凭什么批评人家，你这水平有什么资格？”</p>
+			<p>“贱人，难道我不会下蛋，还不能评论母鸡么？”</p>
+		</h2>
 	<%= link_to "现在注册!", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
 <% end %>

@@ -7,9 +7,9 @@
 				<%= @user.name %>
 			</h1>
 		</section>
-<section class="stats">
-<%= render 'shared/stats' %>
-</section>
+        <section class="stats">
+        	<%= render 'shared/stats' %>
+		</section>
 	</aside>
 </div>
 <div class="col-md-8">
@@ -17,7 +17,7 @@
 	<% if @user.microposts.any? %>
 	<h3>吐槽贴 (<%= @user.microposts.count %>)</h3>
 	<ol class="microposts">
-	<%= render @microposts %>
+		<%= render @microposts %>
 	</ol>
 	<%= will_paginate @microposts %>
 	<% end %>
